@@ -1,0 +1,7 @@
+bottle 305 27 333 127
+diningtable 1 89 500 375
+chair 204 31 281 92
+chair 397 58 458 138
+chair 465 96 500 199
+chair 37 56 73 92
+chair 1 89 53 204

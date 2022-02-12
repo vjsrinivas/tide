@@ -1,0 +1,10 @@
+bottle 389 219 408 291
+bottle 381 205 390 241
+bottle 371 216 386 286
+bottle 352 223 371 294
+bottle 343 211 355 289
+bottle 330 215 344 288
+pottedplant 361 96 468 189
+pottedplant 323 143 415 220
+pottedplant 281 142 328 223
+pottedplant 288 109 344 192

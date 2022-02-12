@@ -10,7 +10,8 @@ README = (HERE / "README.md").read_text(encoding='utf8')
 # This call to setup() does all the work
 setup(
     name="tidecv",
-    version="1.0.1",
+    zip_safe = False,
+    version="1.0.2",
     description="A General Toolbox for Identifying ObjectDetection Errors",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -25,7 +26,7 @@ setup(
         "Operating System :: OS Independent"
     ],
     python_requires='>=3.6',
-    packages=["tidecv", "tidecv.errors"],
+    packages=["tidecv", "tidecv.errors", "tidecv.drivers"],
     include_package_data=True,
     install_requires=["appdirs", "numpy", "pycocotools", "opencv-python", "seaborn", "pandas", "matplotlib"],
     # entry_points={

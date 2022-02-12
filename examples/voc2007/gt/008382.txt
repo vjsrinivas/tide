@@ -1,0 +1,9 @@
+pottedplant 43 6 134 121
+bottle 169 46 192 105
+chair 1 152 56 264
+chair 139 117 232 211
+chair 302 96 345 152
+chair 231 100 312 176
+diningtable 4 127 500 437
+person 40 47 61 82
+person 41 67 61 100

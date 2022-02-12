@@ -1,0 +1,9 @@
+diningtable 2 67 500 374
+chair 419 52 500 219
+chair 358 38 404 100
+chair 228 2 296 44
+chair 134 36 181 82
+chair 43 41 124 184
+chair 1 94 76 310
+person 82 2 141 117
+person 148 3 196 74

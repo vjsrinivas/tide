@@ -1,0 +1,13 @@
+car 158 383 263 451
+car 19 383 147 426
+pottedplant 109 390 142 446
+pottedplant 44 386 74 429
+pottedplant 96 187 114 207
+pottedplant 118 179 131 198
+pottedplant 138 167 156 186
+pottedplant 89 278 109 297
+pottedplant 110 270 130 291
+pottedplant 212 193 266 288
+pottedplant 188 110 216 153
+motorbike 297 404 354 450
+chair 296 426 320 464
