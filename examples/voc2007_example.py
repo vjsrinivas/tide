@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append('../')
+#sys.path.append('../') # DEBUGGING
 import tidecv
 from tidecv.drivers.fileBB import TIDE_FromListFolder
 from tidecv.quantify import TIDE
