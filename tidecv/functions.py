@@ -84,7 +84,7 @@ def toRLE(mask:object, w:int, h:int):
 	"""
 	import pycocotools.mask as maskUtils
 
-	if type(mask) == list:
+	if type(mask) == list and len(mask) > 0:
 		# polygon -- a single object might consist of multiple parts
 		# we merge all parts into one mask rle code
 		if mask:
@@ -92,7 +92,7 @@ def toRLE(mask:object, w:int, h:int):
 			return maskUtils.merge(rles)
 		else:
 			return 
-	elif type(mask['counts']) == list:
+	elif type(mask) == dict and type(mask['counts']) == list:
 		# uncompressed RLE
 		return maskUtils.frPyObjects(mask, h, w)
 	else:

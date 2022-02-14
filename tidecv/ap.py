@@ -20,6 +20,7 @@ class APDataObject:
 		self.false_negatives = set()
 		self.num_gt_positives = 0
 		self.curve = None
+		self.resolution = 100
 
 	def apply_qualifier(self, kept_preds:set, kept_gts:set) -> object:
 		""" Makes a new data object where we remove the ids in the pred and gt lists. """
@@ -98,7 +99,7 @@ class APDataObject:
 				precisions[i-1] = precisions[i]
 
 		# Compute the integral of precision(recall) d_recall from recall=0->1 using fixed-length riemann summation with 101 bars.
-		resolution = 100 # Standard COCO Resoluton
+		resolution = self.resolution # Standard COCO Resoluton
 		y_range = [0] * (resolution + 1) # idx 0 is recall == 0.0 and idx 100 is recall == 1.00
 		x_range = np.array([x / resolution for x in range(resolution + 1)])
 		recalls = np.array(recalls)
@@ -112,6 +113,13 @@ class APDataObject:
 				y_range[bar_idx] = precisions[precision_idx]
 
 		self.curve = (x_range, y_range)
+
+		'''
+		import matplotlib.pyplot as plt
+		fig = plt.figure()
+		plt.plot(x_range, y_range, 'o-')
+		plt.show()
+		'''
 
 		# Finally compute the riemann sum to get our integral.
 		# avg([precision(x) for x in 0:0.01:1])
